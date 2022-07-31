@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    android:id="@+id/profileFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="5pt"
+            android:id="@+id/linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact No.: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zipcode: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zipcode"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COVID Status: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userCovidStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COVID Status"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last COVID Report Date: "
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="5pt"/>
+
+            <TextView
+                android:id="@+id/userReportDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="80pt"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Logout"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

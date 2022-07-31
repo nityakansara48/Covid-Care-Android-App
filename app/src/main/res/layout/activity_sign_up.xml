@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:padding="10dp"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/covidcarelogo" />
+
+    <TextView
+        android:id="@+id/none1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:textSize="30dp"
+        android:background="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140pt"
+        android:layout_below="@id/none1"
+        android:gravity="center">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="140pt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="140pt"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:hint="Name"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:inputType="number"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:hint="Contact No."
+                    android:layout_marginTop="20dp"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:hint="Email ID"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/email"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/repassword"
+                    android:inputType="textPassword"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:hint="Retype Password"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:hint="Address"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:hint="City"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/pinCode"
+                    android:inputType="number"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:hint="Pincode"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/innerLinearLayout"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/innerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20pt"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:padding="3pt"
+                        android:text="COVID Status: "/>
+                    <Spinner
+                        android:id="@+id/covidStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20pt"
+                        android:layout_marginStart="10pt"
+                        tools:ignore="TouchTargetSizeCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerLinearLayout1"
+                    android:layout_width="150pt"
+                    android:layout_height="20pt"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/innerTextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20pt"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:padding="3pt"
+                        android:text="COVID Report Date: "/>
+                    <EditText
+                        android:id="@+id/covidDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20pt"
+                        android:layout_marginStart="10pt"
+                        android:hint="mm/dd/yyyy"
+                        tools:ignore="TouchTargetSizeCheck"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="80pt"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Sign Up"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/relativeLayout"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="80pt"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Already User? Login"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnSignup"/>
+
+</RelativeLayout>

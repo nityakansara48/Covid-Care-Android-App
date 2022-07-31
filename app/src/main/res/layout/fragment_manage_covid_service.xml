@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageCovidService"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    android:id="@+id/profileManageCovidService">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="5pt"
+        android:id="@+id/linearLayoutManageService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage COVID Services"
+            android:textSize="13pt"
+            android:gravity="center"
+            android:layout_marginBottom="20pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10pt"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="COVID Vaccine"
+                android:textSize="10pt"
+                android:layout_gravity="left"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="20pt"
+                android:textSize="10pt"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="Remove"
+                android:layout_gravity="right"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10pt"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="COVID Testing Kit"
+                android:textSize="10pt"
+                android:layout_gravity="left"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="10pt"
+                android:textSize="10pt"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="Remove"
+                android:layout_gravity="right"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10pt"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="Health Care Kit"
+                android:textSize="10pt"
+                android:layout_gravity="left"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="20pt"
+                android:textSize="10pt"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:text="Remove"
+                android:layout_gravity="right"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100pt"
+            android:layout_height="wrap_content"
+            android:text="Add Services"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20pt"
+            android:layout_marginBottom="10pt"/>
+    </LinearLayout>
+
+</FrameLayout>

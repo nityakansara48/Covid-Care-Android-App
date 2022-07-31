@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateCovidStatus"
+    android:padding="10dp"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update COVID Status"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="20pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/covidStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New COVID Status:"
+                android:gravity="left"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/covidStatusUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:layout_marginStart="10pt"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20pt">
+
+            <TextView
+                android:id="@+id/covidStatusDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COVID Report Date:"
+                android:gravity="left"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/updateDate"
+                android:layout_width="wrap_content"
+                android:hint="mm/dd/yyyy"
+                android:layout_height="20pt"
+                android:layout_marginStart="10pt"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCovidStatusUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update COVID Status"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30pt"/>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

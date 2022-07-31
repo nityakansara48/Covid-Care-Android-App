@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/bg"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/homeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome None!"
+        android:textColor="#FFFFFF"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/none1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeEmail"
+        android:background="@null"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/homeTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_below="@+id/none1">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CDC Guideline"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covid Zones"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Services"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/none2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeTabLayout"
+        android:textSize="5dp"
+        android:background="@null"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/none2">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
