@@ -1,0 +1,2 @@
+# Covid-Care-Android-App
+Created native Android application and frameworks using Java and SQLite for back-end to view the COVID Cases and request for COVID services to your location. Implemented web views, list views, and populated lists from a database using necessary adapters. Called Google Maps API for users to see locations. Tested code for robustness executed edge case, usability, and general reliability analysis and Fixed bugs and improved application performance.
